@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main(void)
 {
 	int n;
@@ -6,7 +7,7 @@ int main(void)
 	scanf("%d", &n);
 	// Your code below here
     
-    // Your University email address 
+    // Your University email address
     char my_email[] = "xianye.wu@student.manchester.ac.uk";
     
 
@@ -18,14 +19,15 @@ int main(void)
         // Determine whether a character is a vowel
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-            printf("Vowel\n");
+            printf("Vowel");
         }
         else {
-            printf("Not Vowel\n");
+            printf("Not vowel");
         }
     }
     else {
-        printf("Invalid index\n");
+        printf("Error");
+        return 1;
     }
 
 	// Do not edit below here
